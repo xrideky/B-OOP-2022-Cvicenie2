@@ -16,6 +16,8 @@ public class Main {
         System.out.println(Arrays.toString(y));
         testArray(y);
         System.out.println(Arrays.toString(y));
+
+        testArraySpread("test",1,2,3,4,5,6,7,8);
     }
 
     public static void testPrimitive(int cislo){
@@ -25,6 +27,11 @@ public class Main {
 
     public static void testArray(int []array){
         array[0]=10;
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void testArraySpread(String text,int... array){
+        System.out.println(text);
         System.out.println(Arrays.toString(array));
     }
 }
